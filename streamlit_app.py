@@ -16,7 +16,7 @@ st.set_page_config(
 
 # Get 1-minute interval data for the past 7 days
 data = yf.download("AAPL", period="7d", interval="1m")
-print(data.tail())
+print(data)
 
 # Daily data for last 3 months
 yf.download("MSFT", period="3mo", interval="1d")
